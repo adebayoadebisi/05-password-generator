@@ -6,7 +6,7 @@
 This activity requires the creation of an application that an employee can use to generate a random password based on the various criteria they’ve selected. The app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
 
 ## User Story
-AS a new employee setting up my secure company profile I WANT to randomly generate a password that meets the company’s security criteria SO THAT I can access the companies intranet securely
+AS a new employee setting up my secure company profile I WANT to randomly generate a password that meets the company’s security criteria SO THAT I can access the companies intranet securely.
 
 ## Acceptance Criteria
 - GIVEN I need a new, secure password
@@ -25,8 +25,8 @@ AS a new employee setting up my secure company profile I WANT to randomly genera
 - WHEN the password is generated 
 - THEN the password is either displayed in an alert or written to the page.
 
-## JavaScript Console
-The following images shows the JavaScript Console displaying the required financial records.
+## Password Generator Application
+The following images shows the Password Generator  displaying a working application.
 
 ![JavaScript Console: Screenshot](./assets/Images/financial-analysis-screenshot.png)
 
@@ -37,17 +37,21 @@ The following images shows the JavaScript Console displaying the required financ
 > **Note** This is a video of the JavaScript Console showing all the required records.
 
 ## References
-[MDN Web Docs - Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
+[MDN Web Docs - While Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
 
-[MDN Web Docs - Math.min()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
+[MDN Web Docs - parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
 
-[JavaScript For Loop](https://www.w3schools.com/js/js_loop_for.asp)
+[MDN Web Docs - Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+[MDN Web Docs - Math.floor()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
+
+[MDN Web Docs - Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
 ## License
 Licensed under the MIT License
 
 ## GitHub Repository
-URL: https://github.com/adebayoadebisi/04-console-finances-challenge  
+URL: https://github.com/adebayoadebisi/05-password-generator 
 
 ## Deployed Web Application
 URL: https://adebayoadebisi.github.io/04-console-finances-challenge/
