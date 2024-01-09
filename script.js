@@ -117,7 +117,6 @@ function getRandom(arr) {
   var randomIndex = Math.floor(Math.random() * arr.length);
   var randomElement = arr[randomIndex];
   return randomElement;
-
 }
 
 // Function to generate password with user input
