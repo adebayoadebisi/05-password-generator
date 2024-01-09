@@ -88,19 +88,72 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+// Password properties
+var password = {
+  length: 0,
+  specialCharacters: "",
+  numericCharacters: "",
+  lowerCasedCharacters: "",
+  upperCasedCharacters: "",
+};
+
 // Function to prompt user for password options
 function getPasswordOptions() {
-
+  while (!password.length) {
+    password.length = parseInt(prompt("Please enter the length of your password. Must be between 8 and 128 characters."));
+    if (password.length < 8 || password.length > 128 || isNaN(password.length)) {
+      alert("Please enter a valid length.");
+      password.length = 0; // Reset the length to trigger the while loop again
+    }
+  }
+  password.specialCharacters = confirm("Click OK to include special characters.");
+  password.numericCharacters = confirm("Click OK to include numeric characters.");
+  password.lowerCasedCharacters = confirm("Click OK to include lowercase characters.");
+  password.upperCasedCharacters = confirm("Click OK to include uppercase characters.");
 }
 
 // Function for getting a random element from an array
 function getRandom(arr) {
+  var randomIndex = Math.floor(Math.random() * arr.length);
+  var randomElement = arr[randomIndex];
+  return randomElement;
 
 }
 
 // Function to generate password with user input
 function generatePassword() {
+  getPasswordOptions();
+  var result = [];
+  var possibleCharacters = [];
+  var guaranteedCharacters = [];
 
+  if (password.specialCharacters) {
+    possibleCharacters += getRandom(specialCharacters);
+    guaranteedCharacters += getRandom(specialCharacters);
+  }
+  if (password.numericCharacters) {
+    possibleCharacters += getRandom(numericCharacters);
+    guaranteedCharacters += getRandom(numericCharacters);
+  }
+  if (password.lowerCasedCharacters) {
+    possibleCharacters += getRandom(lowerCasedCharacters);
+    guaranteedCharacters += getRandom(lowerCasedCharacters);
+  }
+  if (password.upperCasedCharacters) {
+    possibleCharacters += getRandom(upperCasedCharacters);
+    guaranteedCharacters += getRandom(upperCasedCharacters);
+  }
+
+  for (var i = 0; i < password.length; i++) {
+    var possibleCharacter = getRandom(possibleCharacters);
+    result.push(possibleCharacter);
+  }
+
+  for (var i = 0; i < guaranteedCharacters.length; i++) {
+    result[i] = guaranteedCharacters[i];
+  }
+
+  return result.join('');
 }
 
 // Get references to the #generate element
