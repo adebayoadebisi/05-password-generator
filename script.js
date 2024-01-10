@@ -98,6 +98,7 @@ var password = {
 };
 
 // Function to prompt user for password options
+// I had to take into consideration that the user could enter a number outside of the range, or a string and not a number. User could also leave length blank.
 function getPasswordOptions() {
   while (!password.length) {
     password.length = parseInt(prompt("Please enter the length of your password. Must be between 8 and 128 characters."));
@@ -120,6 +121,7 @@ function getRandom(arr) {
 }
 
 // Function to generate password with user input
+// I had to take into consideration that the user could select no options, or all options.
 function generatePassword() {
   getPasswordOptions();
   var result = [];

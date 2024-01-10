@@ -136,6 +136,7 @@ button[disabled] {
   }
 }
 
+/* made the text centralised for smaller screen to make it asthetically pleasing. */
 @media only screen and (max-width: 394px) {
     .card-header {
     text-align: center;

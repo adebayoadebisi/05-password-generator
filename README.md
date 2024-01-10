@@ -3,7 +3,7 @@
 # Password Generator
 
 ## Description
-This activity requires the creation of an application that an employee can use to generate a random password based on the various criteria they’ve selected. The app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+This activity requires the creation of an application that an employee can use to generate a random password based on the various criteria they’ve selected. The app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes even for sizes less than 394px.
 
 ## User Story
 AS a new employee setting up my secure company profile I WANT to randomly generate a password that meets the company’s security criteria SO THAT I can access the companies intranet securely.
