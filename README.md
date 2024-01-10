@@ -28,13 +28,13 @@ AS a new employee setting up my secure company profile I WANT to randomly genera
 ## Password Generator Application
 The following images shows the Password Generator  displaying a working application.
 
-![JavaScript Console: Screenshot](./assets/Images/financial-analysis-screenshot.png)
+![Password Generator: Screenshot](./assets/images/screenshot-password-generator.png)
 
-> **Note** This is a screenshot of the JavaScript Console showing all the required records.
+> **Note** This is a screenshot of the deployed Password Generator.
 
-![JavaScript Console: Functionality](./assets/Images/screenrecording-finance-console.gif)
+![Password Generator: Functionality](./assets/images/password-generator.gif)
 
-> **Note** This is a video of the JavaScript Console showing all the required records.
+> **Note** This is a video of the Password Generator showing all the required criteria.
 
 ## References
 [MDN Web Docs - While Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
@@ -54,4 +54,4 @@ Licensed under the MIT License
 URL: https://github.com/adebayoadebisi/05-password-generator 
 
 ## Deployed Web Application
-URL: https://adebayoadebisi.github.io/04-console-finances-challenge/
+URL: https://adebayoadebisi.github.io/05-password-generator/
